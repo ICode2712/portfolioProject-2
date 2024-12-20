@@ -5,10 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Responsive Portfolio Website Design | I-Code</title>
 
+    <!-- swiper css -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
     <!-- icons -->
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=dark_mode"
+    />
+
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
     />
 
     <!-- Custom css -->
@@ -20,39 +31,311 @@
       <a href="#" class="logo">Portfolio.</a>
 
       <nav class="navbar">
-        <a href="home" class="active">Home</a>
-        <a href="about">About</a>
-        <a href="services">Services</a>
-        <a href="portfolio">Portfolio</a>
-        <a href="contact">Contact</a>
+        <a href="#home" class="active">Home</a>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#contact">Contact</a>
       </nav>
 
       <div>
-        <span class="material-symbols-outlined" id="darkMode-icon"> dark_mode </span>
+        <span class="material-symbols-outlined" id="darkMode-icon">
+          dark_mode
+        </span>
+      </div>
+
+      <div>
+        <span><i class="bx bx-menu" id="menu-icon"></i></span>
       </div>
     </header>
 
     <!-- home section design -->
-     <section class="home" id="home">
-        <div class="home-content">
-            <h3>Hello, I am</h3>
-            <h1>Lucas Franklin</h1>
-            <p>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga odio voluptatem, reiciendis dolorem molestiae consectetur accusamus. Quo, quos!
-            </p>
+    <section class="home" id="home">
+      <div class="home-content">
+        <h3>Hello, I am</h3>
+        <h1>Lucas Franklin</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga odio
+          voluptatem, reiciendis dolorem molestiae consectetur accusamus. Quo,
+          quos!
+        </p>
 
-            <div class="social-link">
-                <a href=""></a>
-                <a href=""></a>
-                <a href=""></a>
-                <a href=""></a>
-                <a href=""></a>
-            </div>
+        <div class="social-link">
+          <a href="#"><i class="bx bxl-facebook"></i></a>
+          <a href="#"><i class="bx bxl-twitter"></i></a>
+          <a href="#"><i class="bx bxl-instagram-alt"></i></a>
+          <a href="#"><i class="bx bxl-linkedin"></i></a>
+          <a href="#"><i class="bx bxl-github"></i></a>
         </div>
-     </section>
 
+        <a href="#" class="btn">Download CV</a>
+      </div>
 
-<!-- custom js -->
+      <div class="profession-container">
+        <div class="profession-box">
+          <div class="profession" style="--i: 0">
+            <i class="bx bx-code-alt"></i>
+            <h3>Web Developer</h3>
+          </div>
+          <div class="profession" style="--i: 1">
+            <i class="bx bx-camera"></i>
+            <h3>Photographer</h3>
+          </div>
+          <div class="profession" style="--i: 2">
+            <i class="bx bx-palette"></i>
+            <h3>Web Designer</h3>
+          </div>
+          <div class="profession" style="--i: 3">
+            <i class="bx bx-video-recording"></i>
+            <h3>Videographer</h3>
+          </div>
+
+          <div class="circle"></div>
+        </div>
+
+        <div class="overlay"></div>
+
+        <div class="home-img">
+          <img src="./images/home.png" alt="" />
+        </div>
+      </div>
+    </section>
+
+    <!-- about section design -->
+    <section class="about" id="about">
+      <div class="about-img">
+        <img src="./images/about.png" alt="" />
+      </div>
+
+      <div class="about-content">
+        <h2 class="heading">About <span>Me</span></h2>
+        <h3>Hi, I'm Here To Help Your Next Project!</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Possimus
+          voluptatum adipisci libero eos harum perferendis voluptates doloribus
+          optio nemo soluta molestias accusamus earum excepturi architecto
+          veniam sed error totam, incidunt cum reprehenderit! Quas, voluptates
+          magnam adipisci est quod laboriosam dolorem!
+        </p>
+        <a href="#" class="btn">Read More</a>
+      </div>
+    </section>
+
+    <!-- services section design -->
+    <section class="services" id="services">
+      <h2 class="heading">My <span>Services</span></h2>
+
+      <div class="services-container">
+        <div class="services-box">
+          <i class="bx bx-code-alt"></i>
+          <h3>Web development</h3>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus
+            amet asperiores, omnis accusantium nam iure enim sunt velit incidunt
+            repellat obcaecati corporis.
+          </p>
+          <a href="#" class="btn">Read More</a>
+        </div>
+        <div class="services-box">
+          <i class="bx bxs-paint"></i>
+          <h3>Graphics Design</h3>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus
+            amet asperiores, omnis accusantium nam iure enim sunt velit incidunt
+            repellat obcaecati corporis.
+          </p>
+          <a href="#" class="btn">Read More</a>
+        </div>
+        <div class="services-box">
+          <i class="bx bx-bar-chart-alt"></i>
+          <h3>Digital Marketing</h3>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus
+            amet asperiores, omnis accusantium nam iure enim sunt velit incidunt
+            repellat obcaecati corporis.
+          </p>
+          <a href="#" class="btn">Read More</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- portfolio section design -->
+    <section class="portfolio" id="portfolio">
+      <h2 class="heading">Latest <span>Project</span></h2>
+
+      <div class="portfolio-container">
+        <div class="portfolio-box">
+          <img src="./images/portfolio1.jpg" alt="" />
+
+          <div class="portfolio-layer">
+            <h4>Web Design</h4>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe,
+              provident ullam.
+            </p>
+            <a href="#"><i class="bx bx-link-external"></i></a>
+          </div>
+        </div>
+        <div class="portfolio-box">
+          <img src="./images/portfolio2.jpg" alt="" />
+
+          <div class="portfolio-layer">
+            <h4>Web Design</h4>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe,
+              provident ullam.
+            </p>
+            <a href="#"><i class="bx bx-link-external"></i></a>
+          </div>
+        </div>
+        <div class="portfolio-box">
+          <img src="./images/portfolio3.jpg" alt="" />
+
+          <div class="portfolio-layer">
+            <h4>Web Design</h4>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe,
+              provident ullam.
+            </p>
+            <a href="#"><i class="bx bx-link-external"></i></a>
+          </div>
+        </div>
+        <div class="portfolio-box">
+          <img src="./images/portfolio4.jpg" alt="" />
+
+          <div class="portfolio-layer">
+            <h4>Web Design</h4>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe,
+              provident ullam.
+            </p>
+            <a href="#"><i class="bx bx-link-external"></i></a>
+          </div>
+        </div>
+        <div class="portfolio-box">
+          <img src="./images/portfolio5.jpg" alt="" />
+
+          <div class="portfolio-layer">
+            <h4>Web Design</h4>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe,
+              provident ullam.
+            </p>
+            <a href="#"><i class="bx bx-link-external"></i></a>
+          </div>
+        </div>
+        <div class="portfolio-box">
+          <img src="./images/portfolio6.jpg" alt="" />
+
+          <div class="portfolio-layer">
+            <h4>Web Design</h4>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe,
+              provident ullam.
+            </p>
+            <a href="#"><i class="bx bx-link-external"></i></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- testimonial design -->
+    <div class="testimonial-container">
+      <h2 class="heading">Valuable <span>Testimonial</span></h2>
+
+      <div class="testimonial-wrapper">
+        <div class="testimonial-box mySwiper">
+          <div class="testimonial-content swiper-wrapper">
+            <div class="testimonial-slide swiper-slide">
+              <img src="./images/testimonial1.jpg" alt="" />
+              <h3>Jackson Levi</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Consequatur omnis possimus qui aut numquam minus quia? Omnis
+                nobis vitae laboriosam vero labore deleniti quas nisi,
+                praesentium atque expedita modi est aliquam incidunt magnam,
+                consequuntur aut et neque ullam rerum nesciunt optio. Aliquid
+                repudiandae dolore tempora neque? Maiores, harum fugit! Sequi
+                perspiciatis quis quaerat consequatur magni tempora animi, harum
+                pariatur enim?
+              </p>
+            </div>
+            <div class="testimonial-slide swiper-slide">
+              <img src="./images/testimonial2.jpg" alt="" />
+              <h3>Flora Ocean</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Consequatur omnis possimus qui aut numquam minus quia? Omnis
+                nobis vitae laboriosam vero labore deleniti quas nisi,
+                praesentium atque expedita modi est aliquam incidunt magnam,
+                consequuntur aut et neque ullam rerum nesciunt optio. Aliquid
+                repudiandae dolore tempora neque? Maiores, harum fugit! Sequi
+                perspiciatis quis quaerat consequatur magni tempora animi, harum
+                pariatur enim?
+              </p>
+            </div>
+            <div class="testimonial-slide swiper-slide">
+              <img src="./images/testimonial3.jpg" alt="" />
+              <h3>Julian Grayson</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Consequatur omnis possimus qui aut numquam minus quia? Omnis
+                nobis vitae laboriosam vero labore deleniti quas nisi,
+                praesentium atque expedita modi est aliquam incidunt magnam,
+                consequuntur aut et neque ullam rerum nesciunt optio. Aliquid
+                repudiandae dolore tempora neque? Maiores, harum fugit! Sequi
+                perspiciatis quis quaerat consequatur magni tempora animi, harum
+                pariatur enim?
+              </p>
+            </div>
+          </div>
+
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- contact section design -->
+    <section class="contact" id="contact">
+      <h2 class="heading">Contact <span>Me</span></h2>
+
+      <form action="#">
+        <div class="input-box">
+          <input type="text" placeholder="Full Name" />
+          <input type="email" placeholder="Email Address" />
+        </div>
+        <div class="input-box">
+          <input type="number" placeholder="Mobile Number" />
+          <input type="text" placeholder="Email Subject" />
+        </div>
+        <textarea
+          name=""
+          id=""
+          cols="30"
+          rows="10"
+          placeholder="Your Message"
+        ></textarea>
+        <input type="submit" value="Send Message" class="btn" />
+      </form>
+    </section>
+
+    <!-- footer design -->
+    <footer class="footer">
+      <div class="footer-text">
+        <p>Copyright &copy; 2024 by I-Code | All Rights Reserved</p>
+      </div>
+
+      <div class="footer-iconTop">
+        <a href="#home"><i class="bx bx-up-arrow-alt"></i></a>
+      </div>
+    </footer>
+
+    <!-- swiper js -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- custom js -->
     <script src="./js/script.js"></script>
   </body>
 </html>
