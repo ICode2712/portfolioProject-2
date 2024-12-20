@@ -659,11 +659,10 @@ span{
 
     #darkMode-icon{
         position: absolute;
-        top: 35%;
+        top: 2.5rem;
         right: 7rem;
-        font-size: 2.6rem;
+        font-size: 2.8rem;
         color: var(--text-color);
-        margin-bottom: .1rem;
     }
 
     .navbar{
@@ -675,6 +674,11 @@ span{
         background: var(--bg-color);
         border-top: .1rem solid rgba(0, 0, 0, 0.2);
         box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.1);
+        display: none;
+    }
+
+    .navbar.active{
+        display: block;
     }
 
     .navbar a{
